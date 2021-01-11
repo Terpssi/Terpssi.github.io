@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "ModernTypewriter";
+    src: url("fonts/MODERN TYPEWRITER.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("fonts/Caveat/Caveat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Caveat";
+    src: url("fonts/Caveat/Caveat-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Fregat";
+    src: url("fonts/fregat/Fregat_regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Fregat";
+    src: url("fonts/fregat/Fregat_italic.otf");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Fregat";
+    src: url("fonts/fregat/Fregat_bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Fregat";
+    src: url("fonts/fregat/Fregat_bold_italic.otf");
+    font-weight: bold;
+    font-style: italic;
+}

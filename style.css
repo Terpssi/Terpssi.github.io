@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --baseColor: #1f1f1f;
+    --blackColor: #000000;
+    --lightColor:  #393939;
+    --teaColor: #620e0e;
+    --baseFont: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 20px;
+    color: var(--baseColor);
+}
+.layout {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+}
+header .layout:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("img/LeoneVenterOnUnsplash.jpg");
+    background-size: cover;
+    z-index: -99;
+}
+header .layout {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 3% 0 4%;
+}
+header a {
+    color: var(--baseColor);
+    text-decoration: none;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked ~ .menu-button > span {
+    transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-button > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu-toggle:checked ~ nav {
+    visibility: visible;
+    left: 70px;
+    transition-duration: 0.5s;
+}
+.menu-button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-button > span,
+.menu-button > span::before,
+.menu-button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+.menu-button > span::before {
+    content: '';
+    top: -9px;
+}
+.menu-button > span::after {
+    content: '';
+    top: 9px;
+}
+nav {
+    visibility: hidden;
+    position: fixed;
+    left: 100%;
+    top: 25px;
+    transition-duration: 0.5s;
+    white-space: nowrap;
+}
+nav a {
+    padding: 7px;
+    text-transform: uppercase;
+}
+.menu-button:hover > span:after {
+    background-color: var(--teaColor);
+    top: -9px;
+}
+.menu-button:hover > span:before {
+    background-color: var(--teaColor);
+    top: 9px;
+}
+nav a:hover {
+    color: var(--teaColor);
+}
+h1 {
+    font-family: "Caveat", monospace;
+    font-weight: normal;
+    font-size: 80px;
+    color: var(--blackColor);
+}
+.header-content p {
+    color: var(--lightColor);
+}
+.arrow-down {
+    align-self: center;
+}
+.arrow-down {
+    font-size: 30px;
+    transition: color .5s;
+    padding: 15px;
+    color: var(--lightColor);
+}
+.arrow-down:hover {
+    color: var(--teaColor);
+    animation: arrow .5s ease 4 alternate;
+}
+@keyframes arrow {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-10px)}
+    100% {transform: translateY(10px)}
+}
+
+
+.test {
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.test:after {
+    background-color: red;
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.squ {
+    background-color: green;
+    display: inline-block;
+    vertical-align: middle;
+}

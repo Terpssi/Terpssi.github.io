@@ -5,62 +5,66 @@
     <meta name="keywords" content="важные, ключевые, слова">
     <meta name="description" content="краткое описание">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="CustomIcons/style.css">
     <title></title>
 </head>
 <body>
-    <header>
+<header>
+    <div class="layout">
+        <div class="navigation">
+            <input type="checkbox" id="menu-toggle">
+            <label class="menu-button" for="menu-toggle">
+                <span></span>
+            </label>
+            <nav>
+                <a href="#about-me">О себе</a>
+                <a href="#">Мои работы</a>
+            </nav>
+            <div class="theme">
+                <i class="icon-sun theme-light"></i>
+                <i class="icon-brightness-contrast theme-dark"></i>
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>Привет, я Анастасия Богункова</h1>
+            <p>Junior Front-end разработчик, верстальщик</p>
+        </div>
+        <a class="arrow-down icon-arrow-down2" href="#about-me"></a>
+    </div>
+</header>
+<main>
+    <section id="about-me">
         <div class="layout">
-            <div class="navigation">
-                <input type="checkbox" id="menu-toggle">
-                <label class="menu-button" for="menu-toggle">
-                    <span></span>
-                </label>
-                <nav>
-                    <a href="#about-me">О себе</a>
-                    <a href="#">Мои работы</a>
-                </nav>
+            <h2>Давайте знакомиться</h2>
+            <div>
+                <h3>О себе</h3>
+                <p>Тут написана какая то информация обо мне</p>
             </div>
-            <div class="header-content">
-                <h1>Привет, я Анастасия Terpssi</h1>
-                <p>Junior Front-end разработчик, верстальщик</p>
+            <div>
+                <h3>Навыки</h3>
+                <p>Тут описаны некоторые навыки, возможно даже с картинками :)</p>
             </div>
-            <a class="arrow-down icon-arrow-down2" href="#about-me"></a>
         </div>
-    </header>
-    <main>
-        <section id="about-me">
-            <div class="layout">
-                <h2>Давайте знакомиться</h2>
-                <div>
-                    <h3>О себе</h3>
-                    <p>Тут написана какая то информация обо мне</p>
-                </div>
-                <div>
-                    <h3>Навыки</h3>
-                    <p>Тут описаны некоторые навыки, возможно даже с картинками :)</p>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Мои работы</h2>
-            <p>Тут пока ничего нет, но я в процессе</p>
-        </section>
-        <section>
-            <form action="">
-                Форма обратной связи
-            </form>
-        </section>
-    </main>
-    <footer>
-        <div class="social-icons">
-            <a href="#">Email</a>
-            <a href="#">Telegram</a>
-            <a href="#">GitHub</a>
-            <a href="#">Hh</a>
-        </div>
-        <p>&copy; Анастасия Terpssi</p>
-    </footer>
+    </section>
+    <section>
+        <h2>Мои работы</h2>
+        <p>Тут пока ничего нет, но я в процессе</p>
+    </section>
+    <section>
+        <form action="">
+            Форма обратной связи
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="social-icons">
+        <a href="#">Email</a>
+        <a href="#">Telegram</a>
+        <a href="#">GitHub</a>
+        <a href="#">Hh</a>
+    </div>
+    <p>&copy; Анастасия Terpssi</p>
+</footer>
 </body>
 </html>

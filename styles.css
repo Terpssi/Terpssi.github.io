@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --baseColor: #1f1f1f;
+    --teaColor: #620e0e;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-size: 40px;
+    color: var(--baseColor);
+}
+header .layout {
+    width: 100vw;
+    height: 98vh;
+    padding: 3% 20px 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .layout:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("img/LeoneVenterOnUnsplash.jpg");
+    background-size: cover;
+    z-index: -99;
+}
+.theme {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.theme i {
+    font-size: 70px;
+    padding: 20px
+}
+.theme-dark {
+    display: none;
+}
+.navigation {
+    display: flex;
+    font-size: 50px;
+    line-height: 80px;
+}
+#menu-toggle {
+    display: none;
+}
+nav {
+    visibility: hidden;
+    position: fixed;
+    left: 100%;
+    top: 45px;
+    transition-duration: 0.5s;
+    white-space: nowrap;
+}
+#menu-toggle:checked ~ nav {
+    visibility: visible;
+    left: 15%;
+    transition-duration: 0.5s;
+}
+.menu-button {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    left: 40px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-button > span,
+.menu-button > span::before,
+.menu-button > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    transition-duration: .25s;
+}
+.menu-button > span::before {
+    content: '';
+    top: -25px;
+}
+.menu-button > span::after {
+    content: '';
+    top: 25px;
+}
+#menu-toggle:checked ~ .menu-button > span {
+    transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-button > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-button > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+nav a {
+    padding: 10px;
+}
+.menu-button:hover > span:before,
+.menu-button:hover > span:after {
+    background-color: var(--teaColor);
+}
+nav a:hover {
+    color: var(--teaColor);
+}
+.header-content h1 {
+    margin-bottom: 30px;
+    color: var(--teaColor);
+    font-family: "Caveat", monospace;
+    font-weight: normal;
+    font-size: 120px;
+    line-height: 110px;
+}
+header a {
+    color: var(--baseColor);
+    text-decoration: none;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает синий фон при нажатии*/
+}
+header .arrow-down {
+    font-size: 80px;
+    color: var(--teaColor);
+}
+.arrow-down:hover {
+    animation: arrow .5s ease 4 alternate;
+}
+@keyframes arrow {
+    0% {transform: translateY(0px)}
+    50% {transform: translateY(-10px)}
+    100% {transform: translateY(10px)}
+}
+
+@media (min-width: 411px) {
+}
+@media (min-width: 736px) {
+}
+@media (min-width: 1024px) {
+}

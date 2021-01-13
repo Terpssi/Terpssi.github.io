@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3c2a79-6b9d-4457-9c2f-d3fcae23fd6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/demo-files/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/demo-files/demo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/demo-files/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/demo-files/demo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/fonts/icomoon.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/selection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomIcons/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CustomIcons/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +61,7 @@
       <updated>1610350907086</updated>
       <workItem from="1610350908159" duration="640000" />
       <workItem from="1610452763478" duration="6263000" />
+      <workItem from="1610526808789" duration="5371000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1610350950393</created>

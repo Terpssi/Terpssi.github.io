@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CustomIcons/style.css">
     <title></title>
 </head>
-<body>
+<body id="body">
 <header>
     <div class="layout">
         <div class="navigation">
@@ -22,8 +22,7 @@
                 <a href="#">Мои работы</a>
             </nav>
             <div class="theme">
-                <i class="icon-sun theme-light"></i>
-                <i class="icon-brightness-contrast theme-dark"></i>
+                <i class="icon-sun" id="themeButton"></i>
             </div>
         </div>
         <div class="header-content">
@@ -66,5 +65,14 @@
     </div>
     <p>&copy; Анастасия Terpssi</p>
 </footer>
+<script>
+    "use strict";
+    var buttonTheme = document.getElementById('themeButton');
+    var body = document.getElementById('body');
+    buttonTheme.addEventListener("click", ()=> {
+        buttonTheme.classList.toggle('icon-brightness-contrast');
+        body.classList.toggle('darkTheme');
+    })
+</script>
 </body>
 </html>

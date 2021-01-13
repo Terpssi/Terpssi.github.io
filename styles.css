@@ -6,6 +6,8 @@
 :root {
     --baseColor: #1f1f1f;
     --teaColor: #620e0e;
+    --light: #d2c8c8;
+    --lightRed: #b82c2c;
 }
 html {
     scroll-behavior: smooth;
@@ -20,8 +22,8 @@ body {
 }
 header .layout {
     width: 100vw;
-    height: 98vh;
-    padding: 3% 20px 4%;
+    height: 100vh;
+    padding: 2vh 20px 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,9 +48,6 @@ header .layout:after {
 .theme i {
     font-size: 70px;
     padding: 20px
-}
-.theme-dark {
-    display: none;
 }
 .navigation {
     display: flex;
@@ -146,6 +145,30 @@ header .arrow-down {
     0% {transform: translateY(0px)}
     50% {transform: translateY(-10px)}
     100% {transform: translateY(10px)}
+}
+
+.darkTheme header .layout:after {
+    background: url("img/LeoneVenterOnUnsplashdark.jpg");
+}
+.darkTheme {
+    color: var(--light);
+}
+.darkTheme .header-content h1 {
+    color: var(--lightRed);
+}
+.darkTheme header .arrow-down {
+    color: var(--lightRed);
+}
+.darkTheme nav a:hover {
+    color: var(--lightRed);
+}
+.darkTheme .menu-button > span,
+.darkTheme .menu-button > span::before,
+.darkTheme .menu-button > span::after {
+    background-color: var(--lightRed);
+}
+.darkTheme header a {
+    color: var(--light);
 }
 
 @media (min-width: 411px) {

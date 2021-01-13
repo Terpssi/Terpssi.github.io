@@ -149,12 +149,14 @@ header .arrow-down {
 
 .darkTheme header .layout:after {
     background: url("img/LeoneVenterOnUnsplashdark.jpg");
+    background-size: cover;
 }
 .darkTheme {
     color: var(--light);
 }
 .darkTheme .header-content h1 {
     color: var(--lightRed);
+    text-shadow: 5px 5px 15px rgba(255,255,255, 0.2);
 }
 .darkTheme header .arrow-down {
     color: var(--lightRed);

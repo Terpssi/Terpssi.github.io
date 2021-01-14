@@ -22,7 +22,7 @@ body {
     color: var(--baseColor);
 }
 .layout {
-    padding: 2vh 20px 5vh;
+    padding: 3vh 20px 5vh;
     margin: 0 auto;
     max-width: 1200px;
 }

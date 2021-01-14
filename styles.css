@@ -189,17 +189,17 @@ header .arrow-down {
 }
 
 
-@media (max-width: 1023px) { /* <---- 1024 */
+@media (max-width: 1023px) { /* 768 <---- 1023 */
     .header-content h1 {
         color: #ff0000;
     }
 }
-@media (max-width: 767px) { /* <--- 768 */
+@media (max-width: 767px) { /* 480 <--- 767 */
     .header-content h1 {
         color: #ff0077;
     }
 }
-@media (max-width: 479px) { /* <-- 480 */
+@media (max-width: 479px) { /* <-- 479 */
     .header-content h1 {
         color: #bb00ff;
     }

@@ -188,9 +188,10 @@ header .arrow-down {
     color: var(--light);
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 1024px) {
     .header-content h1 {
-        color: #bb00ff;
+        color: #ff0000;
     }
 }
 @media (max-width: 768px) {
@@ -198,8 +199,8 @@ header .arrow-down {
         color: #ff0077;
     }
 }
-@media (max-width: 1024px) {
+@media (max-width: 480px) {
     .header-content h1 {
-        color: #ff0000;
+        color: #bb00ff;
     }
 }

@@ -1,181 +1,244 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-:root {
-    --baseColor: #1f1f1f;
-    --teaColor: #620e0e;
-    --light: #d2c8c8;
-    --lightRed: #b82c2c;
-}
-html {
-    scroll-behavior: smooth;
-}
-body {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-    font-size: 40px;
-    color: var(--baseColor);
-}
-header .layout {
-    width: 100vw;
-    height: 100vh;
-    padding: 2vh 20px 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-header .layout:after {
-    content: '';
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url("img/LeoneVenterOnUnsplash.jpg");
-    background-size: cover;
-    z-index: -99;
-}
-.theme {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.theme i {
-    font-size: 70px;
-    padding: 20px
-}
-.navigation {
-    display: flex;
-    font-size: 50px;
-    line-height: 80px;
-}
-#menu-toggle {
-    display: none;
-}
-nav {
-    visibility: hidden;
-    position: fixed;
-    left: 100%;
-    top: 45px;
-    transition-duration: 0.5s;
-    white-space: nowrap;
-}
-#menu-toggle:checked ~ nav {
-    visibility: visible;
-    left: 15%;
-    transition-duration: 0.5s;
-}
-.menu-button {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 50px;
-    left: 40px;
-    width: 70px;
-    height: 70px;
-    cursor: pointer;
-    z-index: 1;
-}
-.menu-button > span,
-.menu-button > span::before,
-.menu-button > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: black;
-    transition-duration: .25s;
-}
-.menu-button > span::before {
-    content: '';
-    top: -25px;
-}
-.menu-button > span::after {
-    content: '';
-    top: 25px;
-}
-#menu-toggle:checked ~ .menu-button > span {
-    transform: rotate(45deg);
-}
-#menu-toggle:checked ~ .menu-button > span::before {
-    top: 0;
-    transform: rotate(0);
-}
-#menu-toggle:checked ~ .menu-button > span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-nav a {
-    padding: 10px;
-}
-.menu-button:hover > span:before,
-.menu-button:hover > span:after {
-    background-color: var(--teaColor);
-}
-nav a:hover {
-    color: var(--teaColor);
-}
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*:root {*/
+/*    --baseColor: #1f1f1f;*/
+/*    --teaColor: #620e0e;*/
+/*    --light: #d2c8c8;*/
+/*    --lightRed: #b82c2c;*/
+/*}*/
+/*html {*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+/*body {*/
+/*    font-family: sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*    -webkit-font-smoothing: antialiased;*/
+/*    font-size: 40px;*/
+/*    color: var(--baseColor);*/
+/*}*/
+/*.layout {*/
+/*    padding: 2vh 20px 5vh;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*header .layout {*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*header .layout:after {*/
+/*    content: '';*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background: url("img/LeoneVenterOnUnsplash.jpg");*/
+/*    background-size: cover;*/
+/*    z-index: -99;*/
+/*}*/
+/*.theme {*/
+/*    flex: 1;*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*}*/
+/*.theme i {*/
+/*    font-size: 70px;*/
+/*    padding: 20px*/
+/*}*/
+/*.navigation {*/
+/*    display: flex;*/
+/*    font-size: 50px;*/
+/*    line-height: 80px;*/
+/*}*/
+/*#menu-toggle {*/
+/*    display: none;*/
+/*}*/
+/*nav {*/
+/*    visibility: hidden;*/
+/*    position: fixed;*/
+/*    left: 100%;*/
+/*    top: 45px;*/
+/*    transition-duration: 0.5s;*/
+/*    white-space: nowrap;*/
+/*}*/
+/*#menu-toggle:checked ~ nav {*/
+/*    visibility: visible;*/
+/*    left: 15%;*/
+/*    transition-duration: 0.5s;*/
+/*}*/
+/*.menu-button {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    position: fixed;*/
+/*    top: 50px;*/
+/*    left: 40px;*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*    cursor: pointer;*/
+/*    z-index: 1;*/
+/*}*/
+/*.menu-button > span,*/
+/*.menu-button > span::before,*/
+/*.menu-button > span::after {*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 4px;*/
+/*    background-color: black;*/
+/*    transition-duration: .25s;*/
+/*}*/
+/*.menu-button > span::before {*/
+/*    content: '';*/
+/*    top: -25px;*/
+/*}*/
+/*.menu-button > span::after {*/
+/*    content: '';*/
+/*    top: 25px;*/
+/*}*/
+/*#menu-toggle:checked ~ .menu-button > span {*/
+/*    transform: rotate(45deg);*/
+/*}*/
+/*#menu-toggle:checked ~ .menu-button > span::before {*/
+/*    top: 0;*/
+/*    transform: rotate(0);*/
+/*}*/
+/*#menu-toggle:checked ~ .menu-button > span::after {*/
+/*    top: 0;*/
+/*    transform: rotate(90deg);*/
+/*}*/
+/*nav a {*/
+/*    padding: 10px;*/
+/*}*/
+/*.menu-button:hover > span:before,*/
+/*.menu-button:hover > span:after {*/
+/*    background-color: var(--teaColor);*/
+/*}*/
+/*nav a:hover {*/
+/*    color: var(--teaColor);*/
+/*}*/
+/*.header-content h1 {*/
+/*    margin-bottom: 30px;*/
+/*    color: var(--teaColor);*/
+/*    font-family: "Caveat", monospace;*/
+/*    font-weight: normal;*/
+/*    font-size: 120px;*/
+/*    line-height: 110px;*/
+/*}*/
+/*header a {*/
+/*    color: var(--baseColor);*/
+/*    text-decoration: none;*/
+/*    text-align: center;*/
+/*    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); !*убирает синий фон при нажатии*!*/
+/*}*/
+/*header .arrow-down {*/
+/*    font-size: 80px;*/
+/*    color: var(--teaColor);*/
+/*}*/
+/*.arrow-down:hover {*/
+/*    animation: arrow .5s ease 4 alternate;*/
+/*}*/
+/*@keyframes arrow {*/
+/*    0% {transform: translateY(0px)}*/
+/*    50% {transform: translateY(-10px)}*/
+/*    100% {transform: translateY(10px)}*/
+/*}*/
+
+/*.darkTheme header .layout:after {*/
+/*    background: url("img/LeoneVenterOnUnsplashdark.jpg");*/
+/*    background-size: cover;*/
+/*}*/
+/*.darkTheme {*/
+/*    color: var(--light);*/
+/*}*/
+/*.darkTheme .header-content h1 {*/
+/*    color: var(--lightRed);*/
+/*    text-shadow: 5px 5px 15px rgba(255,255,255, 0.2);*/
+/*}*/
+/*.darkTheme header .arrow-down {*/
+/*    color: var(--lightRed);*/
+/*}*/
+/*.darkTheme nav a:hover {*/
+/*    color: var(--lightRed);*/
+/*}*/
+/*.darkTheme .menu-button > span,*/
+/*.darkTheme .menu-button > span::before,*/
+/*.darkTheme .menu-button > span::after {*/
+/*    background-color: var(--lightRed);*/
+/*}*/
+/*.darkTheme header a {*/
+/*    color: var(--light);*/
+/*}*/
+
+/*@media (min-width: 411px) {*/
+/*}*/
+/*@media (min-width: 736px) {*/
+/*    body {*/
+/*        font-size: 25px;*/
+/*    }*/
+/*    .menu-button {*/
+/*        top: 30px;*/
+/*        left: 40px;*/
+/*        width: 50px;*/
+/*        height: 50px;*/
+/*    }*/
+/*    .navigation {*/
+/*        font-size: 30px;*/
+/*        line-height: 80px;*/
+/*    }*/
+/*    .theme i {*/
+/*        font-size: 40px;*/
+/*        padding: 10px;*/
+/*    }*/
+/*    nav {*/
+/*        top: 15px;*/
+/*    }*/
+/*    #menu-toggle:checked ~ nav {*/
+/*        left: 12%;*/
+/*    }*/
+/*    .menu-button > span::before {*/
+/*        content: '';*/
+/*        top: -19px;*/
+/*    }*/
+/*    .menu-button > span::after {*/
+/*        content: '';*/
+/*        top: 19px;*/
+/*    }*/
+/*    .header-content h1 {*/
+/*        margin-bottom: 10px;*/
+/*        font-size: 60px;*/
+/*        line-height: 60px;*/
+/*    }*/
+/*}*/
+/*@media (min-width: 1024px) {*/
+/*}*/
+
 .header-content h1 {
-    margin-bottom: 30px;
-    color: var(--teaColor);
-    font-family: "Caveat", monospace;
-    font-weight: normal;
-    font-size: 120px;
-    line-height: 110px;
-}
-header a {
-    color: var(--baseColor);
-    text-decoration: none;
-    text-align: center;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*убирает синий фон при нажатии*/
-}
-header .arrow-down {
-    font-size: 80px;
-    color: var(--teaColor);
-}
-.arrow-down:hover {
-    animation: arrow .5s ease 4 alternate;
-}
-@keyframes arrow {
-    0% {transform: translateY(0px)}
-    50% {transform: translateY(-10px)}
-    100% {transform: translateY(10px)}
+    color: #008000;
 }
 
-.darkTheme header .layout:after {
-    background: url("img/LeoneVenterOnUnsplashdark.jpg");
-    background-size: cover;
+@media (min-width: 320px) {
+    .header-content h1 {
+        color: #0000ff;
+    }
 }
-.darkTheme {
-    color: var(--light);
+@media (min-width: 480px) {
+    .header-content h1 {
+        color: #bb00ff;
+    }
 }
-.darkTheme .header-content h1 {
-    color: var(--lightRed);
-    text-shadow: 5px 5px 15px rgba(255,255,255, 0.2);
-}
-.darkTheme header .arrow-down {
-    color: var(--lightRed);
-}
-.darkTheme nav a:hover {
-    color: var(--lightRed);
-}
-.darkTheme .menu-button > span,
-.darkTheme .menu-button > span::before,
-.darkTheme .menu-button > span::after {
-    background-color: var(--lightRed);
-}
-.darkTheme header a {
-    color: var(--light);
-}
-
-@media (min-width: 411px) {
-}
-@media (min-width: 736px) {
+@media (min-width: 768px) {
+    .header-content h1 {
+        color: #ff0077;
+    }
 }
 @media (min-width: 1024px) {
+    .header-content h1 {
+        color: #ff0000;
+    }
 }

@@ -47,29 +47,35 @@
         </div>
     </section>
     <section>
-        <h2>Мои работы</h2>
-        <p>Тут пока ничего нет, но я в процессе</p>
+        <div class="layout">
+            <h2>Мои работы</h2>
+            <p>Тут пока ничего нет, но я в процессе</p>
+        </div>
     </section>
     <section>
-        <form action="">
-            Форма обратной связи
-        </form>
+        <div class="layout">
+            <form action="">
+                Форма обратной связи
+            </form>
+        </div>
     </section>
 </main>
 <footer>
-    <div class="social-icons">
-        <a href="#">Email</a>
-        <a href="#">Telegram</a>
-        <a href="#">GitHub</a>
-        <a href="#">Hh</a>
+    <div class="layout">
+        <div class="social-icons">
+            <a href="#">Email</a>
+            <a href="#">Telegram</a>
+            <a href="#">GitHub</a>
+            <a href="#">Hh</a>
+        </div>
+        <p>&copy; Анастасия Terpssi</p>
     </div>
-    <p>&copy; Анастасия Terpssi</p>
 </footer>
 <script>
     "use strict";
     var buttonTheme = document.getElementById('themeButton');
     var body = document.getElementById('body');
-    buttonTheme.addEventListener("click", ()=> {
+    buttonTheme.addEventListener("click", () => {
         buttonTheme.classList.toggle('icon-brightness-contrast');
         body.classList.toggle('darkTheme');
     })

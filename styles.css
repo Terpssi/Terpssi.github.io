@@ -6,8 +6,9 @@
 :root {
     --baseColor: #1f1f1f;
     --teaColor: #620e0e;
+    /*--teaColor: #961515;*/
     --light: #d2c8c8;
-    --lightRed: #b82c2c;
+    --lightRed: #c63131;
 }
 html {
     scroll-behavior: smooth;
@@ -170,7 +171,7 @@ header .arrow-down {
 }
 .darkTheme .header-content h1 {
     color: var(--lightRed);
-    text-shadow: 5px 5px 15px rgba(255,255,255, 0.2);
+    text-shadow: 2px 2px 3px rgba(255,0,0, 0.4);
 }
 .darkTheme header .arrow-down {
     color: var(--lightRed);

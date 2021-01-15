@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f3c2a79-6b9d-4457-9c2f-d3fcae23fd6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/LeoneVenterOnUnsplashdark2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/JuniorTeixeiraOnPexels.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/LeoneVenterOnUnsplashdark.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/LeoneVenterOnUnsplashdark.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +60,7 @@
       <workItem from="1610452763478" duration="6263000" />
       <workItem from="1610526808789" duration="11107000" />
       <workItem from="1610611904589" duration="11559000" />
+      <workItem from="1610701227451" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="1st commit">
       <created>1610350950393</created>

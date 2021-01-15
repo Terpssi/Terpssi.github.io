@@ -145,6 +145,7 @@ header a {
 header .arrow-down {
     font-size: 35px;
     color: var(--teaColor);
+    margin-bottom: 3vh;
 }
 .arrow-down:hover {
     animation: arrow .5s ease 4 alternate;
@@ -187,8 +188,18 @@ header .arrow-down {
 .darkTheme header a {
     color: var(--light);
 }
-
-
+@media (min-width: 1600px) { /* (1600) <----  */
+    .header-content h1 {
+        color: #37ff00;
+    }
+    .header-content h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .header-content p {
+        font-size: 22px;
+    }
+}
 @media (max-width: 1023px) { /* (768) <---- 1023 */
     .header-content h1 {
         color: #ff0000;
